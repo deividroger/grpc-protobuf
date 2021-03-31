@@ -21,10 +21,10 @@ func main() {
 
 	client := pb.NewUserServiceClient(connection)
 
-	//AddUser(client)
-	//AddUserVerbose(client)
-	//AddUsers(client)
-	AddUserStreamBoth(client)
+	AddUser(client)           //Request | Response
+	AddUserVerbose(client)    //Request | Resonse stream
+	AddUsers(client)          //Request Stream | Response
+	AddUserStreamBoth(client) //Request Stream | Response Stream
 
 }
 
